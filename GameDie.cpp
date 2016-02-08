@@ -13,7 +13,12 @@ GameDie::GameDie()
 //generate a random number between 1-6 (inclusive) and display it
 void GameDie::roll()
 {
-	cout<< rand() % 10 + 1<<endl;
+	int randomNumber = 2;
+	while(randomNumber==2 || randomNumber==3){
+		randomNumber = rand() % 20 + 1;
+	}
+
+	cout<< randomNumber<<endl;
 }
 
 
